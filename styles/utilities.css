@@ -1,0 +1,30 @@
+/* utilities */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+}
+
+.text-bright {
+    color: white;
+}
+
+.button {
+    padding: 0.8rem 2rem;
+    border-radius: 99rem;
+    color: white;
+    background-color: #e6533c;
+    font-weight: bold;
+    border: none;
+}
+
+.button.secondary {
+    background-color: transparent;
+    border: solid 2px white;
+}
+.heading {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+  }
