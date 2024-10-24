@@ -28,7 +28,22 @@
           <li><a href="">About</a></li>
         </ul>
         <div class="burger">
-          <h3>MENU</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-white"
+            width="40px"
+            height="40px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
         </div>
       </nav>
       <section class="container hero">
@@ -62,7 +77,6 @@
       </section>
     </header>
     <main>
-      <!-- Banner section -->
       <section class="change-habits container">
         <h1 class="heading text-bright">Change Your Habits</h1>
         <p class="info">
@@ -73,25 +87,33 @@
           <div class="habit">
             <img src="images\image 3.png" alt="" />
             <p class="title text-bright">Movement</p>
-            <p>We believe fitness should be accessible to everyone</p>
+            <p class="habit-info">
+              We believe fitness should be accessible to everyone
+            </p>
           </div>
 
           <div class="habit">
             <img src="images\image 2.png" alt="" />
             <p class="title text-bright">Time</p>
-            <p>We believe fitness should be accessible to everyone</p>
+            <p class="habit-info">
+              We believe fitness should be accessible to everyone
+            </p>
           </div>
 
           <div class="habit">
             <img src="images\image 4.png" alt="" />
             <p class="title text-bright">Practice</p>
-            <p>We believe fitness should be accessible to everyone</p>
+            <p class="habit-info">
+              We believe fitness should be accessible to everyone
+            </p>
           </div>
 
           <div class="habit">
             <img src="images\image 5.png" alt="" />
             <p class="title text-bright">Weight Loss</p>
-            <p>We believe fitness should be accessible to everyone</p>
+            <p class="habit-info">
+              We believe fitness should be accessible to everyone
+            </p>
           </div>
         </div>
       </section>
@@ -113,7 +135,6 @@
           </div>
         </div>
       </section>
-      <!-- Bmi calculator -->
       <section>
         <div class="container bmi-title">
           <h1 class="heading text-bright">BMI Calculator</h1>
@@ -175,8 +196,8 @@
           </div>
         </div>
       </section>
-      <section class="container">
-        <div>
+      <section class="container team">
+        <div class="info">
           <h2 class="heading text-bright">Meet Our Team</h2>
           <p>
             This is our most respected team members who are working for your
@@ -184,49 +205,57 @@
           </p>
         </div>
         <div class="trainers">
-          <div class="member1">
+          <div class="member">
             <img class="trainer-image" src="images/trainer1.png" alt="" />
             <div class="trainer-info">
               <h3>Jerome Bell</h3>
               <p>Trainer</p>
             </div>
           </div>
-          <div class="member2">
+          <div class="member">
             <img src="images/trainer2.png" alt="" />
-            <h3>Cameron Williamson</h3>
-            <p>Trainer</p>
+            <div>
+              <h3>Cameron Williamson</h3>
+              <p>Trainer</p>
+            </div>
           </div>
-          <div class="member3">
+          <div class="member">
             <img src="images/trainer3.png" alt="" />
-            <h3>Darrell Steward</h3>
-            <p>Trainer</p>
+            <div>
+              <h3>Darrell Steward</h3>
+              <p>Trainer</p>
+            </div>
           </div>
-          <div class="member4">
+          <div class="member">
             <img src="images/trainer4.png" alt="" />
-            <h3>Dianne Russel</h3>
-            <p>Trainer</p>
+            <div>
+              <h3>Dianne Russel</h3>
+              <p>Trainer</p>
+            </div>
           </div>
-          <div class="member5">
+          <div class="member">
             <img src="images/trainer5.png" alt="" />
-            <h3>Cody Fisher</h3>
-            <p>Trainer</p>
+            <div>
+              <h3>Cody Fisher</h3>
+              <p>Trainer</p>
+            </div>
           </div>
-          <div class="member6">
+          <div class="member">
             <img src="images/trainer6.png" alt="" />
-            <h3>Theresa Webb</h3>
-            <p>Trainer</p>
+            <div>
+              <h3>Theresa Webb</h3>
+              <p>Trainer</p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="container">
-        <div class="newsletter-container">
-          <div class="newsletter">
+      <section class="">
+        <div class="container newsletter">
+          <div class="newsletter-title">
             <h1 class="text-bright">Newsletter</h1>
             <p>
               Get your daily dose of motivational quotes & tips. Sign up today!
             </p>
-            <hr class="hr1" />
-          </div>
           </div>
           <form action="">
             <input
@@ -236,8 +265,8 @@
               placeholder="Enter your name"
             />
             <input type="email" placeholder="Enter your email id" />
+            <button class="button">Subscribe</button>
           </form>
-          <button class="btn-orange">Subscribe</button>
         </div>
       </section>
     </main>

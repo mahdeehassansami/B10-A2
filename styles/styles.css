@@ -57,6 +57,7 @@ nav a {
 
 .hero {
   display: flex;
+  padding: 12px;
 }
 
 .hero > * {
@@ -78,7 +79,7 @@ nav a {
 .heading > span {
   font-family: Miama;
   font-weight: 400;
-  font-size: 150px;
+  font-size: 1.92em;
 }
 
 .hero-image {
@@ -127,6 +128,7 @@ nav a {
   align-items: center;
   gap: 32px;
   text-align: center;
+  padding: 12px;
 }
 
 .change-habits > .info {
@@ -150,6 +152,7 @@ nav a {
   border-radius: 100%;
   margin-bottom: 18px;
 }
+
 /* Run section */
 .run-container {
   display: flex;
@@ -170,10 +173,10 @@ nav a {
   object-fit: cover;
   border-radius: 0.5rem;
 }
+
 .bmi-title > h1,
 .bmi-title > p {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 24px;
 }
 table {
@@ -189,9 +192,12 @@ td {
   padding: 10px 20px;
   text-align: left;
 }
+.bmi-title {
+  padding: 12px;
+}
 .bmi {
   background-color: #222;
-  padding: 48px 0px;
+  padding: 48px 12px;
 }
 .bmi-container {
   display: flex;
@@ -211,11 +217,11 @@ td {
 .bmi-form > p {
   margin-bottom: 12px;
 }
-
 .input-pair {
   display: flex;
   margin-bottom: 10px;
   gap: 10px;
+  width: 100%;
 }
 .input-pair > * {
   flex: 1 0 0;
@@ -237,26 +243,42 @@ select {
   padding: 10px;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 8px;
+  min-width: 0%;
+}
+
+.team {
+  padding: 12px;
+}
+.team {
+  margin-bottom: 24px;
 }
 .trainers {
   background-color: #222;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+  padding: 20px;
   border-radius: 18px;
 }
-.trainer-image {
+.member {
   position: relative;
+  height: 277px;
 }
-.trainer-info {
-  color: red;
+.member > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.member > div {
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  bottom: 0%;
+  padding: 24px;
+  color: white;
 }
+
 footer {
-    padding-top: 66px;
+  padding-top: 66px;
   background: rgba(255, 255, 255, 0.1);
 }
 footer > div {
@@ -296,14 +318,35 @@ footer > div > div > h2 {
     font-weight: 800;
   }
 }
-.newsletter{
-    background-color: #222;
 
+.newsletter {
+  background-color: #222;
+  border-radius: 18px;
 }
-.newsletter-container{
-    display: flex;
-    justify-content: center;
+.newsletter-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 12px 0px;
 }
+.newsletter-title p {
+  max-width: 60%;
+}
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  gap: 12px;
+  padding-bottom: 24px;
+}
+.newsletter-text {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 footer li,
 a {
   color: rgba(255, 255, 255, 0.5);
@@ -311,21 +354,68 @@ a {
   text-decoration: none;
   list-style: none;
 }
-.copyright{
-    display: flex;
-    margin-top: 32px;
-    padding-bottom: 16px;
-    justify-content: center;
+.copyright {
+  display: flex;
+  margin-top: 32px;
+  padding-bottom: 16px;
+  justify-content: center;
 }
-.hr{
-    margin-top: 80px;
-    justify-content: center;
+.hr {
+  margin-top: 80px;
+  justify-content: center;
 }
-hr{
-    width: 63%;
+hr {
+  width: 63%;
+  opacity: 20%;
 }
 @media screen and (min-width: 1201px) {
   .burger {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero .heading {
+    font-size: 36px;
+    max-width: 75%;
+  }
+  .habits {
+    flex-direction: column;
+  }
+  .change-habits .habit-info {
+    max-width: 60%;
+  }
+
+  .run {
+    padding: 12px;
+  }
+
+  .run-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .run-text {
+    max-width: 100%;
+  }
+  .bmi-title > h1,
+  .bmi-title > p {
+    text-align: left;
+  }
+  .bmi-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .trainers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer > div {
+    flex-direction: column;
+  }
+  .get-started {
+    flex-direction: column;
   }
 }
